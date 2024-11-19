@@ -22,7 +22,9 @@ title: Seymour (Clone)
 #email: your-email@example.com
 description: by Ivan Sergeev and Martin Dvorak
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://edegeltje.github.io/seymour" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://edegeltje.github.io/mirror/seymour" # the base hostname & protocol for your site, e.g. http://example.com
+original_url: https://Ivan-Sergeyev.github.io/seymour
+
 twitter_username:
 github_username: edegeltje
 repository: edegeltje/seymour
