@@ -5,7 +5,9 @@
 # layout: home
 usemathjax: true
 ---
-Note : This webpage is a mirror of the real project page!!!!!
+Note : This website is a mirror of the real project site!!!!!
+The original website can be found [here]({{ site.original_url }}).
+Thank you for visiting.
 
 Useful links:
 
