@@ -3,7 +3,7 @@ name: Build Seymour
 on:
   push:
     branches:
-      - main
+      - website_mirror
     paths:
       - '**/*.lean'
       - 'lean-toolchain'
