@@ -88,12 +88,15 @@
   \uses{def:code_tu_matrix}
   \lean{Matrix.TU_adjoin_id_below_iff,Matrix.TU_adjoin_id_above_iff,Matrix.TU_adjoin_id_left_iff,Matrix.TU_adjoin_id_right_iff}
   \leanok
-  $A$ is TU iff every basis matrix of $\left[ I \mid A \right]$ has determinant $\pm 1$.
+  $A$ is TU iff $\left[ I \mid A \right]$ is.
 \end{lemma}
 
 \begin{proof}[Proof sketch]
-  \uses{def:code_tu_matrix}
-  Gaussian elimination. Basis submatrix: its columns form a basis of all columns, its rows form a basis of all rows.
+  \uses{def:code_tu_matrix,lem:code_tu_add_unit_row}
+  The matrix $\left[ I \mid A \right]$ can be obtained from $A$ by repeatedly adding a unit row, then transposing and permuting
+  the columns. Therefore, we can use induction on the number of added identity rows, making use of
+  lemma \ref{lem:code_tu_add_unit_row}, lemma \ref{lem:code_tu_transpose}, and the fact that
+  permuting columns preserves determinants of submatrices up to a sign.
 \end{proof}
 
 \begin{lemma}[block-diagonal matrix with TU blocks is TU]
